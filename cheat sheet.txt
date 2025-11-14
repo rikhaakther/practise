@@ -1,0 +1,42 @@
+ 1) Desktop এ গিয়ে repo clone করো
+cd ~/Desktop
+git clone https://github.com/rikhaakther/practise.git
+
+ 2) 
+cd practise
+
+3) 
+git checkout Rikha
+
+ 4) 
+git status   
+
+git add .pdf
+
+5) Commit করো
+git commit -m "Add Rikha's git cheat sheet"
+
+6)
+git push -u origin Rikha
+
+
+
+
+
+
+# Merge
+git checkout main
+git pull origin main
+git merge Rikha
+
+# Rebase
+git checkout Rikha
+git pull origin Rikha
+git rebase main
+
+# Cherry-pick
+git checkout main
+git log --oneline
+git checkout Rikha
+git cherry-pick <commit-id>
+
